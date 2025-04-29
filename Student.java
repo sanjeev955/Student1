@@ -5,13 +5,13 @@ public class Student {
     int id;
     String course;
     String phoneNo;
-    
+    String address;
 
-    public Student(String name, int id, String course, String phoneNo){
+    public Student(String name, int id, String course, String phoneNo,String address){
         this.id = id;
         this.course = course;
         this.phoneNo = phoneNo;
-       
+       this.address=address;
     }
 
 
@@ -21,6 +21,7 @@ public class Student {
         System.out.println("ID: " + id);
         System.out.println("Course: " + course);
         System.out.println("Phone Number: " + phoneNo);
+        System.out.println("Address:"+address);
         
     }
 
@@ -31,7 +32,7 @@ public class Student {
             101,                
             "Computer Science", 
             "9876543210",       
-            "123 Main Street"   
+            "BVB Back Gate"   
         );
 
         student1.displayDetails();
